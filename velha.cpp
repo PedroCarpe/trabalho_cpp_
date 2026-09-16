@@ -15,7 +15,7 @@
 
 int VerificaVelha( int velha[3][3] )
 {
-	if((velha[0][0]==1 && velha[0][1]==1 && velha[0][2]==1)){
+	if((velha[0][0]==1 && velha[0][1]==1 && velha[0][2]==1) or (velha[1][0]==1 && velha[1][1]==1 && velha[1][2]==1)){
 	    return 1;
     }
 	return 0; /*!< retorna zero para teste */ 
