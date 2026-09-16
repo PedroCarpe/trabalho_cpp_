@@ -17,6 +17,15 @@ TEST_CASE( "Testa linhas, esperando vitória do jogador 1", "[vitoria 1]" ) {
 					  };
     REQUIRE( VerificaVelha(teste1) == 1 );
 
+    int teste2[3][3]= {   { 0, 2, 1 }, 
+	                      { 1, 1, 1 },
+						  { 1, 2, 0 }
+					  };
+    REQUIRE( VerificaVelha(teste2) == 1 );
+
+
+
+
 
 } 
  
