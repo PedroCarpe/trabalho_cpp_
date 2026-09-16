@@ -1,0 +1,14 @@
+# Arquivos de objetos compilados
+*.o
+*.obj
+
+# Arquivos executaveis gerados
+testa_velha
+*.exe
+*.out
+
+# Arquivos de cobertura de codigo (gcov / lcov)
+*.gcda
+*.gcno
+<!-- *.gcov -->
+coverage/
