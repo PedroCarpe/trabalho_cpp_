@@ -122,6 +122,6 @@ TEST_CASE( "Testa diagonal secundaria, esperando vitória do jogador 1", "[vitor
 	                      { 2, 1, 0 },
 						  { 1, 2, 1 }
 					  };
-    REQUIRE( VerificaVelha(teste1) == -1 );
+    REQUIRE( VerificaVelha(teste1) == 1 );
 
 }
