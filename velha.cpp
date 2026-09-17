@@ -31,6 +31,10 @@ int VerificaVelha( int velha[3][3] )
         return 1;
     }
 
+    //Verifica vitoria do jogador 2, na diagonal secundaria
+    if(velha[0][2] == 2 && velha[1][1] == 2 && velha[2][0] == 2){
+        return 2;
+    }
 
 	//Refatoração para a verificação generalizada das linhas
 	for (int i = 0; i < 3; i++) {
@@ -48,10 +52,6 @@ int VerificaVelha( int velha[3][3] )
             return velha[0][i]; // Retorna 1 (Jogador 1) ou 2 (Jogador 2) dependendo do valor da coluna
             }
         }
-
-
-
-
 	
 	return 0; /*!< retorna zero para teste */ 
 }
