@@ -117,3 +117,11 @@ TEST_CASE( "Testa diagonal principal, esperando vitória do jogador 2", "[vitori
 
 }
 
+TEST_CASE( "Testa diagonal secundaria, esperando vitória do jogador 1", "[vitoria 1]" ) {
+	int teste1[3][3]= {   { 2, 0, 1 }, 
+	                      { 2, 1, 0 },
+						  { 1, 2, 1 }
+					  };
+    REQUIRE( VerificaVelha(teste1) == -1 );
+
+}
