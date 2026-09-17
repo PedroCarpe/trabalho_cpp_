@@ -21,6 +21,10 @@ int VerificaVelha( int velha[3][3] )
         return 1;
     }
 
+    if(velha[0][0] == 2 && velha[1][1] == 2 && velha[2][2] == 2){
+        return 2;
+    }
+
 
 	//Refatoração para a verificação generalizada das linhas
 	for (int i = 0; i < 3; i++) {
