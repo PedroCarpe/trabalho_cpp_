@@ -75,3 +75,24 @@ TEST_CASE( "Testa colunas, esperando vitória do jogador 1", "[vitoria 1]" ) {
 
 } 
  
+
+TEST_CASE( "Testa colunas, esperando vitória do jogador 2", "[vitoria 2]" ) {
+	int teste1[3][3]= {   { 2, 0, 1 }, 
+	                      { 2, 1, 0 },
+						  { 2, 2, 1 }
+					  };
+    REQUIRE( VerificaVelha(teste1) == 0 );
+
+    int teste2[3][3]= {   { 1, 2, 1 }, 
+	                      { 1, 2, 1 },
+						  { 0, 2, 2 }
+					  };
+    REQUIRE( VerificaVelha(teste2) == 0 );
+    
+	int teste3[3][3]= {   { 0, 2, 2 }, 
+	                      { 1, 1, 2 },
+						  { 0, 1, 2 }
+					  };
+    REQUIRE( VerificaVelha(teste3) == 0 ); 
+
+}	
