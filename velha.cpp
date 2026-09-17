@@ -18,10 +18,10 @@ int VerificaVelha( int velha[3][3] )
 	
 	//Refatoração para a verificação generalizada das linhas
 	for (int i = 0; i < 3; i++) {
-        if (velha[i][0] == 1 && 
+        if (velha[i][0] != 0 && 
             velha[i][0] == velha[i][1] && 
             velha[i][1] == velha[i][2]) {
-            return velha[i][0]; // Retorna 1 (Jogador 1)
+            return velha[i][0]; // Retorna 1 (Jogador 1) ou 2 (Jogador 2) dependendo do valor da linha
             }
         }
 	
