@@ -24,6 +24,16 @@ int VerificaVelha( int velha[3][3] )
             return velha[i][0]; // Retorna 1 (Jogador 1) ou 2 (Jogador 2) dependendo do valor da linha
             }
         }
+    
+    for (int i = 0; i < 3; i++) {
+        if (velha[0][i] != 0 && 
+            velha[0][i] == velha[1][i] && 
+            velha[1][i] == velha[2][i]) {
+            return velha[0][i]; // Retorna 1 (Jogador 1) ou 2 (Jogador 2) dependendo do valor da coluna
+            }
+        }
+
+
 	
 	//if((velha[0][0]==1 && velha[0][1]==1 && velha[0][2]==1) or (velha[1][0]==1 && velha[1][1]==1 && velha[1][2]==1) or (velha[2][0]==1 && velha[2][1]==1 && velha[2][2]==1)){
 	//    return 1;
